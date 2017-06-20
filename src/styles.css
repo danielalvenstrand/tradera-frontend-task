@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Helvetica, Arial;
+}
+
+body {
+  background-color: #f0f1f2;
+  padding-bottom: 50px;
+}
+
+button {
+  background-color: #a5aaa0;
+  color: white;
+  border-radius: 25px;
+  height: 50px;
+  padding: 0 25px;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  -webkit-transition: background-color  300ms;
+  -moz-transition: background-color 300ms;
+  -ms-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+button.favorite {
+  background-color: #729570;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/** Components **/
+.content {
+  text-align: center;
+}
+
+.card {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 50px;
+  background-color: white;
+  margin: 25px;
+  padding: 25px;
+  width: calc(100% - 100px);
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/** Wide Screen **/
+@media (min-width: 45em) {
+  .card {
+    width: 27em;
+  }
+}
+

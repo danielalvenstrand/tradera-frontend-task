@@ -7,8 +7,4 @@ describe('tradera-frontend-task App', () => {
     page = new TraderaFrontendTaskPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
-  });
 });

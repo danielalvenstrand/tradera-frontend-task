@@ -1,0 +1,11 @@
+<span class="product-list-header">
+  <h1>Product list</h1>
+</span>
+<div class="content">
+<app-product
+  *ngFor="let product of products"
+  [product]="product"
+  [favorite]="productService.checkFavorite(product)"
+  (changeFavorite)="productService.toggleFavorite(product)"
+></app-product>
+</div>
