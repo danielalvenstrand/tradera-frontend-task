@@ -5,14 +5,16 @@
   align-items: center;
 }
 
-#header h1, #header button {
-  margin: 0 25px;
+#header h1 {
+  margin-left: 25px;
 }
 
 #header button {
+  margin-right: 25px;
   width: auto;
 }
 
 #header h1 > .amount{
+  white-space: nowrap;
   color: rgba(255,255,255,0.3);
 }
