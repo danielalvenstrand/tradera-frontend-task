@@ -1,6 +1,8 @@
 <router-outlet></router-outlet>
 
-<div class="tabs">
-  <a [routerLink]="['/products']" routerLinkActive="active-link" queryParamsHandling preserveFragment>Products</a>
-  <a [routerLink]="['/favorites']" routerLinkActive="active-link" queryParamsHandling preserveFragment>Favorites</a>
-</div>
+<footer>
+  <nav class="tabs">
+    <a [routerLink]="['/products']" routerLinkActive="active-link" queryParamsHandling preserveFragment>Products</a>
+    <a [routerLink]="['/favorites']" routerLinkActive="active-link" queryParamsHandling preserveFragment>Favorites</a>
+  </nav>
+</footer>

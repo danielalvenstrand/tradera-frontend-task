@@ -1,27 +1,18 @@
-.favorite-header {
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-
-  background-color: rgba(12,15,10,0.9);
-
+#header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  color: white;
 }
 
-.favorite-header > h1, .favorite-header > button {
-  margin: 25px;
+#header h1, #header button {
+  margin: 0 25px;
 }
 
-.favorite-header > button {
+#header button {
   width: auto;
 }
 
-.favorite-header > h1 > .amount{
+#header h1 > .amount{
   color: rgba(255,255,255,0.3);
 }

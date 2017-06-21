@@ -1,13 +1,17 @@
-<span class="favorite-header">
-  <h1>{{(products | favorite)?(products | favorite).length:0}} Product(s) <span class="amount">- {{favoriteSum(products | favorite) | currency:'SEK'}}</span></h1>
-  <button (click)="productService.clearFavorites()">Clear all</button>
-</span>
+<header id="header">
+  <section>
+    <h1>{{(products | favorite)?(products | favorite).length:0}} Product(s) <span class="amount">- {{favoriteSum(products | favorite) | currency:'SEK'}}</span></h1>
+  </section>
+  <section>
+    <button (click)="productService.clearFavorites()">Clear all</button>
+  </section>
+</header>
 
-<div class="content">
-<app-product
-  *ngFor="let product of (products | favorite)"
-  [product]="product"
-  [favorite]="productService.checkFavorite(product)"
-  (changeFavorite)="productService.toggleFavorite(product)"
-></app-product>
-</div>
+<main class="content">
+  <app-product
+    *ngFor="let product of (products | favorite)"
+    [product]="product"
+    [favorite]="productService.checkFavorite(product)"
+    (changeFavorite)="productService.toggleFavorite(product)"
+  ></app-product>
+</main>

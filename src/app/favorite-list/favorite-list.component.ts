@@ -12,7 +12,7 @@ export class FavoriteListComponent implements OnInit {
 
   products: Product[];
 
-  constructor(private productService: ProductService) { }
+  constructor(public productService: ProductService) { }
 
   ngOnInit() {
     this.productService.getProducts().subscribe(products => this.products = products);

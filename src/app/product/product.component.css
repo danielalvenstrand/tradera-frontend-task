@@ -27,7 +27,7 @@
   color: rgba(0,0,0,0.3);
 }
 
-.product .image-wrapper {
+.product .product-image-wrapper {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 5px;
@@ -48,6 +48,6 @@
   transition: all 300ms;
 }
 
-.product .image-wrapper:hover {
+.product .product-image-wrapper:hover {
   border-radius: 5px;
 }

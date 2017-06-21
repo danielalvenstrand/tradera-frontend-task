@@ -1,14 +1,10 @@
-.product-list-header {
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-
-  background-color: rgba(12,15,10,0.9);
-
+#header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
 
-  color: white;
+#header h1 {
+  margin: 0;
 }

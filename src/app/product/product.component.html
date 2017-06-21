@@ -1,11 +1,12 @@
-<div class="product card">
-  <div class="image-wrapper"><img [src]="imageUrl()"></div>
-
-  <h1>
-    {{product.title}}
-  </h1>
-
-  <p>Price: {{product.price | currency:product.currency:true:'1.2-2'}}</p>
-
+<article class="product card">
+  <figure class="product-image-wrapper">
+    <img [src]="imageUrl()">
+  </figure>
+  <section class="card-content">
+    <h1>
+      {{product.title}}
+    </h1>
+    <p>Price: {{product.price | currency:product.currency:true:'1.2-2'}}</p>
   <button (click)="toggleFavorite()" [class.favorite]="favorite">{{favorite?'Remove from':'Add to'}} favorites</button>
-</div>
+  </section>
+</article>
